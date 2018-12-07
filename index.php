@@ -1,9 +1,9 @@
 <?php
 // Start the session
 session_start();
-$fichier = "source.xml";
-$xml = simplexml_load_file($fichier);
-$nbPages = count($xml->page);
+$fichier = "source.xml"; //on indique le lieu du fichier xml dans une variable
+$xml = simplexml_load_file($fichier); //on charge le fichier et on le place dans une variable
+$nbPages = count($xml->page); //on compte le nombre de page présent dans le xml
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,12 +29,12 @@ $nbPages = count($xml->page);
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <?php
-            for ($i = 0; $i < $nbPages; $i++) {
+            for ($i = 0; $i < $nbPages; $i++) { //tant qu'i est inférieur au nb de page, on l'incrémente et on lance la boucle
           ?>
           <li class="nav-item active">
-          <a class="nav-link" href="<?= ($i+1); ?>.html">
+          <a class="nav-link" href="<?= ($i+1); ?>.html"> <!--chacun des liens créé renverra vers 1.html pour le premier, 2.html pour le second etc...-->
           <?php
-            echo $xml->page[$i]->menu;
+            echo $xml->page[$i]->menu; //on affiche l'index 0 du tableau page dans le fichier xml, l'index 0 correspond à la page 1, l'index 1 à la page 2 etc...-->
           ?>
           </a>
           </li>
@@ -45,10 +45,12 @@ $nbPages = count($xml->page);
       </div>
     </nav>
     <?php
-    for ($j = 0; $j < $nbPages; $j++) {
-      $url = '/ProjetPHP/Projet_PHP/'.($j+1).'.html';
-      if ($_SERVER['REQUEST_URI'] == $url) {
-        echo $xml->page[$j]->content;
+    for ($j = 0; $j < $nbPages; $j++) { //pour j inférieur au nb de pages
+      $url = '/ProjetPHP/Projet_PHP/'.($j+1).'.html'; //on défini l'url comme 1.html, 2.html etc
+      if ($_SERVER['REQUEST_URI'] == $url) { //si l'url de la barre d'adresse correspond à l'url du dessus, on affiche le contenu
+          ?><div class="container justify-content-center contact my-4"><?php
+        echo $xml->page[$j]->content; //on affiche le contenu de l'index du tableau page. par exemple l'index 0 s'affichera lorsque l'url sera 1.html (car l'id des pages commence par 1 et non 0)
+        ?></div><?php
       }
     }
     ?>

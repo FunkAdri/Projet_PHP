@@ -1,0 +1,13 @@
+.listContact {
+  list-style: none;
+}
+
+.contact {
+  border: 1px solid black;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+body {
+  background: url("test2.png");
+}
