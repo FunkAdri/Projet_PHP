@@ -76,7 +76,10 @@ $nbPages = count($xml->page);
                 ?>
                 <div class="container justify-content-center contact my-4"><?php
                     echo $xml->page[$j]->content; //on affiche le contenu de l'index du tableau page. par exemple l'index 0 s'affichera lorsque l'url sera 1.html (car l'id des pages commence par 1 et non 0)
-                    ?></div>
+                    if ($_SERVER['REQUEST_URI'] == '/4.html') {
+                        ?><div class="row"><input type="button" class="btn row mx-auto mb-5" value="Envoyer" /></div>
+                    <?php } ?>
+                </div>
                 <?php
             }
         }
