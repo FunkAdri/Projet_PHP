@@ -1,0 +1,75 @@
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px black;
+  color: grey;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px black;
+  color: grey;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  text-align: left;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px black;
+  color: grey;
+  margin-left: 2rem;
+}
+
+.sentence {
+  text-align: justify;
+  letter-spacing: 1px;
+  color: grey;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.video {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.listing {
+  color: grey;
+  letter-spacing: 1px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.album {
+  text-align: center;
+  color: grey;
+  padding-bottom: 3rem;
+}
+
+.background{
+  background-image: url("../assets/img/Muredebriques.jpg");
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
