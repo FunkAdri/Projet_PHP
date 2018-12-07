@@ -1,0 +1,211 @@
+/* création de class pour le background animé */
+/*debut partie karl*/
+.parping__control--small {
+    height: auto;
+    max-width: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    animation:parpingflow 60s infinite linear;
+}
+
+.parping__control--medium {
+    height: auto;
+    max-width: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    animation:parpingflow 120s infinite linear;
+}
+
+.parping__small {
+    width: 15px;
+    height: 7px;
+    position: absolute;
+    border:1px solid #fff;
+    background-image: url("img/parping.png");
+}
+
+.parping__medium {
+    width: 30px;
+    height: 14px;
+    position: absolute;
+    border:1px solid #fff;
+    background-image: url("img/parping.png");
+}
+
+.parping__glow {
+    background-image: url("img/parping.png");
+    border:1px solid #fcffd4;
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(252,255,212,1);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(252,255,212,1);
+    box-shadow: 0px 0px 8px 2px rgba(252,255,212,1);
+}
+
+@keyframes parpingflow {
+    from { top:0px; }
+    to { top:800px; }
+}
+.borders {
+    border: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+    padding: 0;
+}
+/*//fin partie karl//*/
+/*partie laetitia page de garde*/
+.logo {
+    position:absolute;
+}
+
+.navbar {
+    width: 100%;
+    height: 30px;
+
+}
+
+.nav-item.active {
+    color : grey;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    padding-bottom: 2px;
+
+}
+
+a{
+    text-decoration: none; 
+    color: black;
+
+}
+
+.hide {
+    display: none;
+}
+
+.show{
+    display: show;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../assets/img/architecture-1857175_1280.jpg");
+    -webkit-filter:sepia(80%);
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container-fluid.ocordo {
+    color: grey;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #f46037;
+    width : 100%;
+    height: 100%;
+    color : black;
+    letter-spacing : 1px;
+    text-align: center;
+
+}
+
+#footer {
+
+    color: black;
+}
+/*partie page de garde*/
+
+/*partie adrien*/
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+h1 {   text-align: center;   
+       letter-spacing: 1px;   
+       text-shadow: 1px 1px 1px black;   
+       color: grey;   padding-bottom: 2rem;
+} 
+
+h2 {  
+    text-align: center; 
+    letter-spacing: 1px;  
+    text-shadow: 1px 1px 1px black;
+    color: grey;   padding-bottom: 1rem; 
+}
+
+h3 {   
+    text-align: left; 
+    letter-spacing: 1px; 
+    text-shadow: 1px 1px 1px black; 
+    color: grey;   margin-left: 2rem; 
+}
+
+.sentence {  
+    text-align: justify; 
+    letter-spacing: 1px;  
+    color: grey;   
+    margin-left: 1rem; 
+    margin-right: 1rem;
+}
+
+.video {  
+    text-align: center;  
+    padding-top: 1rem;  
+    padding-bottom: 1rem;
+} 
+
+.listing {  
+    color: grey;  
+    letter-spacing: 1px;   
+    margin-left: 3rem;   
+    margin-right: 3rem;
+} 
+
+.album {   
+    text-align: center;   
+    color: grey;   
+    padding-bottom: 3rem; 
+} 
+
+.background{  
+    background-image: url(""); 
+    background-repeat: no-repeat;
+}  
+
+.gallery {   
+    -webkit-column-count: 3;
+    -transform: scale(1);  
+    -ms-transform: scale(1); 
+    transform: scale(1); 
+}
+/*fin partie adrien*/
+/*partie yassine*/
+.listContact {
+  list-style: none;
+}
+
+.contact {
+  border: 1px solid black;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+body {
+  background: url("");
+}
+/*fin partie yassine*/
